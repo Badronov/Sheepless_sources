@@ -18,13 +18,6 @@ public class Settings : MonoBehaviour
     public void Start()
     {
 #if UNITY_IOS || UNITY_ANDROID
-        if (joysticksInverted) 
-        {   
-            SetJoysticksInverted(true);
-        } else 
-        {
-            SetJoysticksInverted(false);
-        }
         accelerationValue.text = "-";
 #else
         moveForwardValue.text = "W";
